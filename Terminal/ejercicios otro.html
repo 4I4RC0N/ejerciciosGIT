@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios de JS y POO</title>
+</head>
+
+
+<body>
+<script>
+let frutas = ["Manzana","Pera","Melon", "Piña"];
+frutas.forEach(
+    function (elemento, indice){
+        console.log(elemento, indice);
+    }
+)
+
+console.log(frutas);
+
+let funcionAarray = frutas.push(5)
+console.log(frutas);
+
+let quitarElemnto = frutas.pop()//el .pop solo quita el ultimo elemento del arregglo
+console.log(frutas);
+
+let anadirPrincio = frutas.unshift('Fresa');
+console.log(frutas);
+
+let eliminarPrimero= frutas.shift();
+console.log(frutas);
+
+frutas.push('Fresa');
+
+let pos = frutas.indexOf('Pera');
+console.log(pos);
+
+let eliminarElemetoUnico =  frutas.splice(1,1);
+console.log(frutas);
+
+let copiarArray = frutas.slice();
+console.log(copiarArray);
+
+
+</script>
+
+</body>
+</html>
+

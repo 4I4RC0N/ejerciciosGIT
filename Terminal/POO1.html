@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POO1</title>
+</head>
+<body>
+<script>
+// let persona1 = {nombre:"Jonathan", edad:32};  //JSON
+// console.log(persona1.nombre);
+// console.log(persona1["edad"]);
+
+/*class Persona {
+    //Metodos
+    hablar(){
+        console.log("Hola soy un robot que aprende a programar");
+    }
+}
+let persona2 = new Persona("Jona", 20);
+persona2.hablar();*/
+
+class Animal{
+
+    //Propiedades
+    nombre;
+    edad;
+    catillaDeVacunacion = {vacuna1:"v1", vacuna2:"v2"};  //objeto declarado de manera implicita
+    //Metodos
+    hablar(){
+        return this.catillaDeVacunacion.vacuna1;
+    }
+
+
+    constructor(nombre = "Nombre Generico", edad = 10 + " segundos") { //metodo que se crea y se ejecuta su funcion
+        //cuando definimos o llamamos a una instancia
+    this.nombre = nombre;
+    this.edad = edad;
+    console.warn("Nacio un Animal y se llama " + this.nombre);
+    }
+
+
+}
+//Creación de una instancia u objeto
+    //Al cotructor yo le puedo dar parametros
+    const pato = new Animal("Donald", 1 + " día");
+    console.log( pato.hablar() );
+    const perro = new Animal();
+    console.log( perro.hablar() );
+
+
+
+
+
+</script>
+</body>
+</html>
