@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+<script>
+
+let inicio = ["cadenas no son", 3, 9, 1, 10, 500, 1, 10, true];
+let orden = [];
+for(let i = 0; i < inicio.length; i++){
+    if(typeof inicio[i] === "number"){
+        console.log(inicio[i]);
+        orden.push(inicio[i]);
+    }
+
+}
+console.log(orden);
+
+
+for (let j = 0; j < orden.length; j++){
+    for (let i = 0; i < orden.length; i++){
+        if (orden[i] > orden[i + 1]){
+            let y = orden[i+ 1];
+            orden[i + 1] = orden[i];
+            orden[i] = y;
+        }
+    }
+}
+console.log(orden);
+
+</script>
+</body>
+</html>
